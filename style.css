@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight:500;
+  letter-spacing:1px;
+  font-family: "Poppins", sans-serif;
+  transition: all 300ms ease-out;
+  color: #191414;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+ font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+font-family: "Poppins", sans-serif;
+  }
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  color: #191414;
+}
+
+.side-menu {
+    
+  position: fixed;
+  background-color: #f8f8f8;
+  color: #191414;
+  width: 18vw;
+  overflow: visible;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.side-menu ul .logOutLink li:hover {
+    background-color: initial;
+}
+
+.side-menu .brand-name {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0px;
+}
+
+.side-menu li {
+  font-size: 14px;
+  padding: 10px 40px;
+  color: #191414;
+  display: flex;
+  align-items: center;
+ border-bottom-right-radius: 50px;
+ border-top-right-radius: 50px;
+}
+
+.side-menu a li:hover {
+    background-color: rgb(235, 235, 235);
+    
+}
+
+
+.brand-name a{
+    
+    font-size: 20px;
+    color: #128f46;
+
+}
+
+.labels {
+  margin-bottom:20px;
+  margin-top: 40px;
+
+}
+.modal {
+
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.dateL {
+font-size: 0.8em;
+margin-top: 10px;
+}
+
+.modalL {
+font-size: 0.9em;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.modalInput {
+padding: 20px 20px;
+border-radius: 10px;
+background-color: #efefef;
+width: 100%;
+}
+
+.modalInput:focus {
+box-shadow: 0px 1px 12px -5px rgb(6, 119, 51); 
+}
+
+.createBtn {
+  padding: 15px 30px;
+  background-color: #128f46;
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 10px;
+  border-radius: 10px;
+  
+}
+
+.createBtn:active {
+  transform: scale(1.1,1.1);
+  background-color: rgb(4, 95, 40);
+
+}
+.createBtn:hover {
+  background-color: rgb(4, 95, 40);
+}
+
+.incomeModal {
+  background-color: #ffffff;
+  display: flex;
+ justify-content: center;
+  align-items: center;
+ 
+  width: max-content;
+  height: max-content;
+  border-radius: 5px;
+}
+
+.transition-fade {
+   opacity: 1;
+    transition:500ms;
+}
+
+html.is-animating .transition-fade{
+  opacity: 0;
+}
+
+.container-m{
+    position: absolute;
+    right: 0;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     width: 80vw; 
+     
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+input[type='date'] {
+  padding: 10px 10px;
+  margin-top: 10px;
+  width: 170px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  background-color: #efefef;
+}
+
+.header .nav .add h2{
+  font-weight: 400;
+  font-size: 1rem;
+  color: #00966b;
+
+}
+
+input {
+    border:none;
+    outline:none;
+
+}
+
+form input[type='text']:focus {
+    box-shadow: 0px 1px 12px -5px #128f46; 
+}
+
+form input[type='text']{
+  border-radius: 10px;
+    background-color: #efefef;
+    padding: 15px 20px;
+    width: 51.7vw;
+}
+
+::placeholder{
+    font-weight: 600;
+    color: rgb(50, 50, 50);
+}
+
+.content-1 {
+    align-self: center;
+  
+    margin-top: -10vh;
+}
+
+li i:hover {
+  color: #128f46;
+}
+
+.container-m .header .nav .user{
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+.container-m .content-1 .row-heading h1{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-right: 6rem;
+}
+
+.productName {
+    font-size: 0.9em;
+    font-weight: 550;
+}
+
+.date {
+    font-size: 0.75em;
+}
+
+.innerFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+
+.total {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.amount {
+    font-size: 0.9em;
+}
+
+
+
+#transactionsHeader {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+
+.totalFlex {
+    
+    cursor: pointer;
+    width: 51.7vw;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-top:6vh;
+}
+.container-m .content-1 .row-heading .filter .add{
+    background-color: #128f46;
+    font-size: 1.3em;
+   position: fixed;
+   top: 85vh;
+   left: 90vw;
+    border-radius: 100%;
+    padding: 19px 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.container-m .content-1 .row-heading .filter .add i{
+    color: white;
+    font-size: 1em;
+}
+
+.add i:hover {
+    background:none;
+    color: initial;
+}
+.filterFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    gap: 7px;
+  
+ 
+
+   
+}
+.row-1{
+    display: flex;
+    justify-content: left;
+   
+}
+
+button {
+    cursor:pointer;
+    border:none;
+    outline:none;
+}
+.Trans-1 {
+    margin-top: 40px;
+  
+}
+
+@media (max-width:850px) {
+
+ .slide-menu {
+    width: 0vw;
+    overflow: hidden;
+  }
+
+  .container-m {
+    width: 100vw;
+  }
+
+  .container-m .header {
+    width: 100vw;
+  }
+}
